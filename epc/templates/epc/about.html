@@ -1,0 +1,194 @@
+{% extends 'epc/base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Nova+Slim&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap" rel="stylesheet">
+<style>
+   *{
+margin:0;
+padding:0;
+}
+.banner{
+width:100%;
+height:130vh;
+background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://skils.in/wp-content/uploads/2020/12/consultancy_services.jpg);
+background-size:cover;
+background-position:center;
+}
+.navbar{
+width:100%;
+margin:auto;
+padding:35px 0;
+display:flex;
+align-items:right;
+justify-content:space-between;
+font-size:30px;
+}
+.logo{
+width:120px;
+cursor:pointer;
+}
+.navbar ul li{
+list-style:none;
+display:inline-block;
+margin:0 20px;
+position:relative;
+}
+.navbar ul li a{
+text-decoration:none;
+color:#fff;
+text-transform:uppercase;
+}
+.navbar ul li::after{
+content:'';
+height:3px;
+width:0;
+background:#009688;
+position:absolute;
+left:0;
+bottom:-10px;
+transition: 0.5s;
+}
+.navbar ul li:hover::after{
+ width:100%;
+ }
+button{
+width:200px;
+padding:15px 0;
+text-align:center;
+margin:20px 10px;
+border-radius:25px;
+font-weight:bold;
+border:2px solid #009688;
+background:transparent;
+color:#fff;
+cursor:pointer;
+}
+@import url('https://fonts.googleapis.com/css?family=Bangers|Cinzel:400,700,900|Lato:100,300,400,700,900|Lobster|Lora:400,700|Mansalva|Muli:200,300,400,600,700,800,900|Open+Sans:300,400,600,700,800|Oswald:200,300,400,500,600,700|Roboto:100,300,400,500,700,900&display=swap');
+/* Used Google Fonts */
+font-family: 'Roboto', sans-serif;
+h1, h2, h3, h4, h5, h6, p{
+  margin:0px;
+  padding:0px;
+}
+.logo-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:inline-block;
+}
+.logo-container ul li {
+    width: 300px;
+    height: 120px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+    padding:20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-container ul li a{
+  text-decoration:none !important;
+  display: inline-block;
+}
+.logo-holder{
+  text-align:center;
+}
+.logo-1 h3 {
+    color: #e74c3c;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    line-height:1.3;
+}
+.logo-1 p {
+    font-size: 20px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: #34495e;
+    font-weight: 600;
+}
+.about{
+height:100vh;
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.about .main img{
+width:580px;
+max-width:100%;
+height:auto;
+padding:0 10px;
+}
+.all-text{
+width:600px;
+max-width:100%;
+padding:0 10px;
+}
+.main{
+width:1290px;
+max-width:95%;
+margin:0 auto;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-around;
+}
+.all-text h4{
+font-family:'Roboto',sans-serif;
+font-size:18px;
+color:#777777;
+letter-spacing:1px;
+font-weight:400;
+margin-bottom:10px;
+}
+.all-text h1{
+font-size:65px;
+color:#fff;
+}
+</style>
+</head>
+<body>
+ <div class="banner">
+     <div class="navbar">
+         <ul>
+            <li><a href="/">Home</a></li>
+             <li><a href="/about">About</a></li>
+              <li><a href="/login">Login</a></li>
+              <li><a href="/new_employee">SignUp</a></li>
+             <li><a href="/contact">Contact US</a></li>
+         </ul>
+     </div>
+      <section class="about">
+          <div class="main">
+          <img src="https://www.omsaigroupconsultancy.com/images/job-consultancy-bangalore.jpg" width="80%" height="80%">
+          <div class="all-text">
+              <h1>About Us</h1>
+              <h1>We are here to give you a job that is perfect for you.</h1>
+          <p>Perfect Job for You</p>
+          <div class="btn">
+              <button type="button">Our Team</button>
+              <button type="button">Learn More</button>
+          </div>
+          </div>
+          </div>
+      </section>
+   </div>
+</body>
+</html>
+{% endblock%}

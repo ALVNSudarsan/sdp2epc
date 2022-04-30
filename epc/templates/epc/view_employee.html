@@ -1,0 +1,9 @@
+{% extends 'epc/base.html' %}
+{% block content %}
+<h3>Registered Employees are</h3>
+{% for s in employee %}
+<b>Register ID:</b>{{s.empid}}<br>
+<b>Name:</b>{{s.name}}<br>
+<b>Department:</b>{{s.dept}}<br>
+{% endfor %}
+{% endblock %}
